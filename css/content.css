@@ -16,7 +16,7 @@ h1
 {
     display: grid;
     grid-gap: 70px 20px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 90%;
     margin: auto;
     padding-bottom: 40px;
@@ -53,7 +53,7 @@ h1
 #box a 
 {
     text-decoration: none;
-    color: rgb(29, 29, 29);
+    color: rgb(231, 14, 14);
 }
 h3
 {
@@ -65,7 +65,7 @@ h4
 }
 h2
 {
-    color: rgb(3, 94, 94);
+    color: rgb(30, 3, 94);
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
@@ -74,7 +74,7 @@ h2
 {
     h1
     {
-        font-size: 25px;
+        font-size: 5px;
     }
     #containerClothing, #containerAccessories
     {
@@ -92,7 +92,7 @@ h2
     {
         display: grid;
         grid-gap: 70px 20px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         width: 80%;
     }    
 }
@@ -135,9 +135,32 @@ h2
     }
 }
 
-/* --------------------owner--------------------*/
+/* default styles */
+body {
+    font-size: 16px;
+  }
+  
+  /* styles for devices with max width 768px (e.g. tablets) */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* styles for devices with max width 480px (e.g. smartphones) */
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
 
-#Owner {
+/* --------------------owner--------------------*/
+ section {
+    background-color: #0e0d0d;
+    padding: 10px;
+    align-items: center;
+  }
+ #Owner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,37 +177,35 @@ h2
   }
   
   #description {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
   }
   
   #OwnerImage {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #ccc;
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
   #name {
-    font-size: 70px;
-    margin-left: 480px;
+    font-size: 30px;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 30%;
   }
   h2 {
-    font-size:30px;
+    font-size:20px;
     align-items: center;
     margin-top: 5px;
     margin: auto;
     margin-bottom: 5px;
   }
   h3 {
-    font-size:40px;
+    font-size:20px;
     align-items: center;
     margin-top: 5px;
     margin: auto;
@@ -192,7 +213,7 @@ h2
   }
   
   h4 {
-    font-size: 30px;
+    font-size: 10px;
     margin-top: 5px;
     align-items: center;
     margin-bottom: 5px;

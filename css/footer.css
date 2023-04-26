@@ -116,3 +116,21 @@ transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
         padding: 0 25px;
     }
 }
+/* default styles */
+body {
+    font-size: 16px;
+  }
+  
+  /* styles for devices with max width 768px (e.g. tablets) */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* styles for devices with max width 480px (e.g. smartphones) */
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }

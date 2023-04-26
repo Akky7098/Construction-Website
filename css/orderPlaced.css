@@ -43,3 +43,17 @@
         font-size: 15px;
     }
 }
+
+/* styles for devices with max width 768px (e.g. tablets) */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* styles for devices with max width 480px (e.g. smartphones) */
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
